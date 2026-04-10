@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard SASS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__link">📊Visão Geral</a>
+                <a href="#" class="sidebar__link">📈 Estatísticas</a>
+                <a href="#" class="sidebar__link">👥 Usuários</a>
+                <a href="#" class="sidebar__link">⚙️ Configurações</a>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="header">
+                <h1 class="header__title">Visão Geral</h1>
+                <div class="header__actions">
+                    <button class="header__notification">🔔</button>
+                    <div class="header__avatar">👤</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="metrics">
+                    <div class="metric__card">
+                        <span class="metric-card__icon">💰</span>
+                        <p class="metric-card__label">Receita Total</p>
+                        <h3 class="metric-card__value">R$ 45.231</h3>
+                        <p class="metric-card__change">+12.5%</p>
+                    </div>
+                </div>
+                <div class="transactions-table"></div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>
