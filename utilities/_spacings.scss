@@ -1,0 +1,15 @@
+@use '../abstracts/tokens' as *;
+
+@each $name, $size in $spacing {
+    .mt-#{$name} {margin-top: $size}
+    .mb-#{$name} {margin-bottom: $size}
+    .ml-#{$name} {margin-left: $size}
+    .mr-#{$name} {margin-right: $size}
+};
+
+@each $name, $size in $spacing {
+    .pt-#{$name} {padding-top: $size}
+    .pb-#{$name} {padding-bottom: $size}
+    .pl-#{$name} {padding-left: $size}
+    .pr-#{$name} {padding-right: $size}
+}
