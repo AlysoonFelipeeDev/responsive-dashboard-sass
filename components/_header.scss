@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/tokens' as *;
+@use '../abstracts/functions' as *;
+
+.header {
+    @include flex($justify: space-between, $align:center);
+    padding: 0 spacing(lg);
+    background-color:  color(bg-primary);
+}
+
+.header__title {
+    font-size: font-size(xl);
+}
+
+.header__actions {
+    @include flex($justify: space-between, $align:center);
+    gap: spacing(md)
+}
+
+.header__notification {
+    background-color: color(bg-primary);
+    border: none;
+    font-size: font-size(xl);
+    cursor: pointer;
+}
+
+.header__avatar {
+    font-size: font-size(xl);
+    background: color(gray-200);
+    padding: spacing(sm);
+    border-radius: 50%;
+}
