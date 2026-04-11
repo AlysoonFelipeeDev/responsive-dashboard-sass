@@ -1,0 +1,38 @@
+@use '../abstracts/tokens' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+.sidebar {
+    @include flex(column, $align: center);
+    background-color: color(gray-700);
+    color: color(gray-50);
+}
+
+.sidebar__logo {
+    font-size: font-size(xxl);
+    padding: spacing(lg)
+}
+
+.sidebar__nav {
+    @include flex(column);
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: color(gray-50);
+    font-size: font-size(xl);
+    padding: spacing(md) spacing(lg);
+    margin-bottom: spacing(lg);
+    
+    &--active {
+        background-color: color(primary); // Destaca o ativo
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    &:hover {
+        background-color: color(gray-500);
+        border-radius: 10px;
+    }
+}
+
