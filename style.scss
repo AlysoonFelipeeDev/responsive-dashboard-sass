@@ -2,4 +2,9 @@
 @use 'abstracts/functions';
 @use 'abstracts/breakpoints';
 @use 'abstracts/mixins';
+@use 'layout/grid';
+@use 'components/sidebar';
+@use 'components/header';
+@use 'components/metric-card';
+@use 'components/table';
 @use 'utilities/spacings';
