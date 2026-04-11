@@ -1,0 +1,14 @@
+@use '../abstracts/tokens' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+
+.container {
+    @include grid($cols: 240px 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    @include grid($rows: 80px 1fr);
+    background-color: color(bg-tertiary);
+}
