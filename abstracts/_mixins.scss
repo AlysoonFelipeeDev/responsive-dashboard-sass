@@ -15,7 +15,7 @@
     align-items: center
 };
 
-@mixin flex ($direction: row, $justify: center, $align: center){
+@mixin flex ($direction: null, $justify: null, $align: null){
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
