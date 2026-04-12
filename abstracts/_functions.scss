@@ -11,4 +11,8 @@
 
 @function font-size($name) {
     @return map.get($font-sizes, $name)
+};
+
+@function card($name){
+    @return map.get($card, $name)
 }
