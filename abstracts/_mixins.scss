@@ -1,8 +1,9 @@
 @use '../abstracts/breakpoints' as *;
+@use '../abstracts/functions' as *;
 @use 'sass:map';
 
 @mixin respond-to($breakpoint){
-    $size: map.get($brakpoints, $breakpoint);
+    $size: map.get($breakpoints, $breakpoint);
 
     @media (min-width: $size){
         @content
@@ -34,9 +35,9 @@
     gap: $gap;
 }
 
-@mixin grid-responsive($cols, $mobile: 1, $tablet: 2, $desktop: 3, $gap: 1rem){
+@mixin grid-responsive($mobile: 1, $tablet: 2, $desktop: 4, $gap: 1rem){
     display: grid;
-    grid-template-columns: repeat($cols, 1fr);
+    grid-template-columns: repeat($mobile, 1fr);
     gap: $gap;
 
     @include respond-to(md){
@@ -46,4 +47,10 @@
     @include respond-to(lg){
         grid-template-columns: repeat($desktop, 1fr);
     }
+}
+
+@mixin card($bg-name, $color-name, $border-name){
+    background-color: card($bg-name);
+    color: card($color-name);
+    border: 1px solid card($border-name);
 }
