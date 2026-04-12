@@ -12,7 +12,22 @@ $color: (
     gray-900: #111827,
     bg-primary: #ffffff,
     bg-secondary: #f9fafb,
-    bg-tertiary: #f3f4f6
+    bg-tertiary: #f3f4f6,
+);
+
+$card: (
+    revenue-100: #C7DBEE,
+    revenue-200: #45719b,
+    revenue-300: #E6F1FB,
+    user-100:#D0DFBF,
+    user-200:#769454,
+    user-300:#EAF3DE,
+    conversion-100: #D7D4F3,
+    conversion-200: #7068C4,
+    conversion-300: #EEEDFE,
+    growth-100: #E8D6BB,
+    growth-200: #ad8d5f,
+    growth-300: #FAEEDA
 );
 
 $spacing: (
