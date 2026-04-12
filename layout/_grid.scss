@@ -12,3 +12,7 @@
     @include grid($rows: 80px 1fr);
     background-color: color(bg-tertiary);
 }
+
+.content {
+    padding: spacing(md); 
+}
