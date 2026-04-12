@@ -3,9 +3,13 @@
 @use '../abstracts/mixins' as *;
 
 .container {
-    @include grid($cols: 240px 1fr);
+    @include grid($cols: 1fr);
     width: 100vw;
     height: 100vh;
+
+    @include respond-to(md){
+        @include grid($cols: 240px 1fr);
+    }
 }
 
 .main {

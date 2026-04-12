@@ -1,6 +1,7 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/tokens' as *;
 @use '../abstracts/functions' as *;
+@use '../abstracts/breakpoints' as *;
 
 .metrics {
     @include grid-responsive(1, 2, 4, spacing(md));

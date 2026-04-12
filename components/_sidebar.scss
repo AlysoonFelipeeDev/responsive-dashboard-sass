@@ -3,9 +3,13 @@
 @use '../abstracts/mixins' as *;
 
 .sidebar {
-    @include flex(column, $align: center);
-    background-color: color(gray-700);
-    color: color(gray-50);
+    display: none;
+
+    @include respond-to(md){
+        @include flex(column, $align: center);
+        background-color: color(gray-700);
+        color: color(gray-50);
+    }
 }
 
 .sidebar__logo {
