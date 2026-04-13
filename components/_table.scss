@@ -1,0 +1,63 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/tokens' as *;
+@use '../abstracts/mixins' as *;
+
+.table-wrapper {
+    width: 100%;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.transactions-table {
+    width: 100%;
+    min-width: 300px;
+    border-collapse: collapse;
+    margin: spacing(xl) 0;
+    border: 1px solid color(gray-500);
+    background-color: color(gray-200);
+    overflow: hidden;
+    
+    @include respond-to(md) {
+        min-width: 100%;
+    }
+
+    thead {
+        background-color: color(gray-700);
+        color: #fff;
+    }
+
+    th, td {
+        padding: spacing(md);
+        text-align: left;
+        border-bottom: 1px solid color(gray-700);
+    }
+
+    tbody tr:nth-child(even) { 
+        background-color: color(gray-500);
+    }
+
+    tbody tr:hover {
+        background-color: color(gray-50);
+        cursor: pointer;
+    }
+}
+
+.status-badge {
+    padding: spacing(sm) spacing(xl);
+    border-radius: spacing(sm);
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 500;
+
+    &--paid {
+        background-color: color(success);
+    }
+
+    &--pending {
+        background-color: color(warning);
+    }
+
+    &--canceled {
+        background-color: color(danger);
+    }
+}
