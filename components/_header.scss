@@ -1,11 +1,25 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/tokens' as *;
 @use '../abstracts/functions' as *;
+@use '../abstracts/breakpoints' as *;
 
 .header {
     @include flex($justify: space-between, $align:center);
     padding: 0 spacing(lg);
     background-color:  color(bg-primary);
+}
+
+.header__hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: font-size(xl);
+    cursor: pointer;
+    padding: 0;
+
+    @include respond-to(md){
+        display: none;
+    }
 }
 
 .header__title {
